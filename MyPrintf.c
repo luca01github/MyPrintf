@@ -5,7 +5,7 @@
 void my_putc(char c) { write(1, &c, 1); }
 
 void my_putstr(const char *str) {
-    if (!str) str = "(null)";
+    if (!str) str = "(null)"; 
     while (*str) {
         my_putc(*str);
         str++;
